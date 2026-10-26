@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AimanibnAshraf — Slave Of Allah</title>
+<meta name="description" content="AimanibnAshraf — Slave Of Allah. Islamic reminders on YouTube, TikTok, Instagram and Facebook. 8,000+ followers across platforms.">
+<link rel="icon" href="insta_profile_pic.jpg">
+<link rel="canonical" href="https://aimanibnashraf.netlify.app/">
+
+<meta property="og:title" content="AimanibnAshraf — Slave Of Allah">
+<meta property="og:description" content="Islamic reminders on YouTube, TikTok, Instagram and Facebook.">
+<meta property="og:image" content="https://aimanibnashraf.netlify.app/insta_profile_pic.jpg">
+<meta property="og:url" content="https://aimanibnashraf.netlify.app/">
+<meta property="og:type" content="profile">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=Noto+Naskh+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#f4efe4;
+  --paper-2:#ebe4d2;
+  --ink:#141210;
+  --ink-dim:#5a5048;
+  --rule:#141210;
+  --accent:#8a6a2f;
+  --accent-2:#2d4a3e;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+a{color:inherit}
+::selection{background:var(--ink);color:var(--paper)}
+.ar{font-family:'Noto Naskh Arabic',serif}
+*:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* grid system — Swiss */
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+@media (max-width:640px){.wrap{padding:0 20px}}
+
+/* masthead */
+.masthead{
+  border-bottom:1px solid var(--rule);
+  background:var(--paper);position:sticky;top:0;z-index:50;
+}
+.masthead .wrap{
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+  padding-top:16px;padding-bottom:16px;gap:24px;
+}
+.masthead .brand{font-family:'Fraunces',serif;font-weight:500;font-size:18px;letter-spacing:-.01em}
+.masthead .brand .ar{color:var(--accent);margin-right:8px;font-size:22px;vertical-align:-2px}
+.masthead .meta{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-dim);text-align:center}
+.masthead nav{display:flex;gap:28px;justify-content:flex-end;font-size:13.5px}
+.masthead nav a{text-decoration:none;color:var(--ink-dim);transition:color .2s}
+.masthead nav a:hover{color:var(--ink)}
+@media (max-width:800px){
+  .masthead .wrap{grid-template-columns:1fr auto}
+  .masthead .meta{display:none}
+}
+@media (max-width:640px){.masthead nav{display:none}}
+
+/* hero — editorial grid */
+.hero{padding:72px 0 48px;border-bottom:1px solid var(--rule)}
+.hero .wrap{display:grid;grid-template-columns:7fr 5fr;gap:64px;align-items:center}
+.hero .issue{
+  display:flex;gap:20px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-dim);margin-bottom:32px;border-bottom:1px solid var(--rule);
+  padding-bottom:16px;
+}
+.hero .issue span + span{border-left:1px solid var(--rule);padding-left:20px}
+.hero .bismillah{
+  font-family:'Noto Naskh Arabic',serif;color:var(--accent);
+  font-size:38px;margin-bottom:28px;line-height:1;
+}
+.hero h1{
+  font-family:'Fraunces',serif;font-weight:300;
+  font-size:clamp(44px,8.5vw,108px);line-height:.98;letter-spacing:-.025em;
+}
+.hero h1 em{font-style:italic;color:var(--accent);font-weight:500}
+.hero .lede{margin-top:28px;max-width:48ch;font-size:17px;color:var(--ink-dim);line-height:1.6}
+.hero .ctas{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;padding:14px 22px;
+  text-decoration:none;font-weight:500;font-size:14px;letter-spacing:.02em;
+  border:1px solid var(--rule);border-radius:999px;cursor:pointer;background:transparent;color:var(--ink);
+  font-family:inherit;transition:background .2s,color .2s,transform .2s;
+}
+.btn:hover{background:var(--ink);color:var(--paper);transform:translateY(-1px)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn.primary:hover{background:var(--accent);border-color:var(--accent)}
+.btn svg{width:16px;height:16px}
+
+.hero .portrait{position:relative}
+.hero .portrait .frame{position:relative;aspect-ratio:4/5;overflow:hidden}
+.hero .portrait img{width:100%;height:100%;object-fit:cover;filter:sepia(.1) contrast(1.03)}
+.hero .portrait::before{
+  content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--rule);z-index:0;
+}
+.hero .portrait .frame{z-index:1}
+.hero .caption{
+  margin-top:20px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-dim);
+  display:flex;justify-content:space-between;gap:12px;
+}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:48px}
+  .hero{padding:48px 0 40px}
+  .hero .portrait{max-width:340px}
+}
+
+/* social proof strip */
+.strip{
+  background:var(--ink);color:var(--paper);
+  padding:14px 0;overflow:hidden;position:relative;
+}
+.strip .marquee{
+  display:flex;gap:48px;white-space:nowrap;
+  animation:slide 40s linear infinite;
+  font-family:'Fraunces',serif;font-size:18px;font-weight:400;letter-spacing:.01em;
+}
+.strip .marquee span{display:inline-flex;align-items:center;gap:12px}
+.strip .marquee .dot{color:var(--accent);font-size:10px}
+.strip .marquee em{color:var(--accent);font-style:normal;font-weight:500}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* section scaffolding */
+.section{padding:88px 0;border-bottom:1px solid var(--rule)}
+.section .head{
+  display:grid;grid-template-columns:1fr 2fr;gap:48px;margin-bottom:56px;
+  align-items:end;padding-bottom:20px;border-bottom:1px solid var(--rule);
+}
+.section .head .num{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-dim)}
+.section .head h2{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(32px,5vw,56px);letter-spacing:-.015em;line-height:1}
+.section .head h2 em{font-style:italic;color:var(--accent);font-weight:500}
+@media (max-width:800px){
+  .section{padding:64px 0}
+  .section .head{grid-template-columns:1fr;gap:12px}
+}
+
+/* about */
+.about{display:grid;grid-template-columns:5fr 7fr;gap:64px;align-items:start}
+.about .lead{font-family:'Fraunces',serif;font-size:28px;line-height:1.35;font-weight:300;letter-spacing:-.01em}
+.about .lead em{color:var(--accent);font-style:italic;font-weight:500}
+.about .body p{margin-bottom:18px;color:var(--ink-dim);max-width:60ch}
+.about .verse{
+  margin-top:32px;padding:28px 32px;background:var(--paper-2);
+  border-left:3px solid var(--accent);
+}
+.about .verse .ar{font-size:28px;color:var(--accent-2);line-height:1.6;margin-bottom:14px;display:block;text-align:right}
+.about .verse .en{font-family:'Fraunces',serif;font-style:italic;font-size:18px;line-height:1.5}
+.about .verse cite{display:block;margin-top:12px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-dim);font-style:normal}
+@media (max-width:800px){.about{grid-template-columns:1fr;gap:32px}}
+
+/* reach / stats */
+.reach{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.stat{background:var(--paper);padding:40px 28px;display:flex;flex-direction:column;gap:10px;min-height:200px}
+.stat .plat{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.stat .n{font-family:'Fraunces',serif;font-size:clamp(48px,6vw,72px);font-weight:300;line-height:1;letter-spacing:-.02em}
+.stat .label{color:var(--ink-dim);font-size:14px;margin-top:auto}
+@media (max-width:800px){.reach{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.reach{grid-template-columns:1fr}.stat{min-height:140px;padding:28px 24px}}
+
+/* platforms */
+.platforms{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.plat-card{
+  grid-column:span 6;
+  text-decoration:none;background:var(--paper-2);
+  border:1px solid var(--rule);padding:32px;
+  display:flex;flex-direction:column;justify-content:space-between;min-height:220px;
+  transition:transform .2s,background .2s,box-shadow .2s;
+  cursor:pointer;position:relative;overflow:hidden;
+}
+.plat-card:hover{transform:translate(-3px,-3px);background:var(--paper);box-shadow:6px 6px 0 var(--rule)}
+.plat-card.featured{grid-column:span 12;background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.plat-card.featured:hover{background:var(--accent-2);border-color:var(--accent-2);box-shadow:6px 6px 0 var(--accent)}
+.plat-card.quad{grid-column:span 4}
+.plat-card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.plat-card svg.logo{width:32px;height:32px;flex-shrink:0}
+.plat-card .num-mark{font-family:'Noto Naskh Arabic',serif;color:var(--accent);font-size:28px;opacity:.7}
+.plat-card.featured .num-mark{opacity:.9}
+.plat-card .meta{display:flex;gap:24px;font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-dim)}
+.plat-card.featured .meta{color:rgba(244,239,228,.6)}
+.plat-card .meta b{color:var(--ink);font-weight:600;letter-spacing:0;font-size:14px;text-transform:none}
+.plat-card.featured .meta b{color:var(--paper)}
+.plat-card .name{font-family:'Fraunces',serif;font-size:38px;font-weight:400;line-height:1;letter-spacing:-.01em;margin-top:20px}
+.plat-card.featured .name{font-size:52px}
+.plat-card .handle{font-size:14px;color:var(--ink-dim);margin-top:6px}
+.plat-card.featured .handle{color:rgba(244,239,228,.7)}
+.plat-card .arrow{position:absolute;top:28px;right:28px;font-size:18px;color:var(--ink-dim);transition:transform .2s}
+.plat-card:hover .arrow{transform:translate(4px,-4px);color:var(--accent)}
+.plat-card.featured .arrow{color:rgba(244,239,228,.6)}
+@media (max-width:800px){
+  .plat-card,.plat-card.featured,.plat-card.quad{grid-column:span 12}
+  .plat-card.featured .name{font-size:40px}
+}
+
+/* subscribe */
+.subscribe{display:grid;grid-template-columns:5fr 7fr;gap:64px;align-items:center}
+.subscribe .copy h3{font-family:'Fraunces',serif;font-size:clamp(32px,4.5vw,52px);font-weight:300;line-height:1.05;letter-spacing:-.015em}
+.subscribe .copy h3 em{color:var(--accent);font-style:italic;font-weight:500}
+.subscribe .copy p{margin-top:18px;color:var(--ink-dim);max-width:40ch}
+.subscribe .proof{margin-top:20px;font-size:12px;color:var(--ink-dim);letter-spacing:.1em;text-transform:uppercase}
+.subscribe .proof b{color:var(--ink);font-weight:600}
+.subscribe form{display:flex;flex-direction:column;gap:12px}
+.subscribe .row{display:flex;border:1px solid var(--rule);background:var(--paper);transition:border-color .2s}
+.subscribe .row:focus-within{border-color:var(--accent)}
+.subscribe input[type=email]{
+  flex:1;padding:18px 20px;border:0;background:transparent;color:var(--ink);
+  font:inherit;font-size:15px;
+}
+.subscribe input[type=email]:focus{outline:none}
+.subscribe button{
+  padding:0 28px;background:var(--ink);color:var(--paper);border:0;cursor:pointer;
+  font:inherit;font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:12px;
+  transition:background .2s;
+}
+.subscribe button:hover{background:var(--accent)}
+.subscribe small{font-size:12px;color:var(--ink-dim)}
+@media (max-width:800px){.subscribe{grid-template-columns:1fr;gap:32px}.subscribe button{padding:16px 24px}}
+
+/* footer */
+footer{padding:56px 0 40px}
+footer .wrap{display:grid;grid-template-columns:2fr 1fr 2fr;gap:32px;align-items:center}
+footer .left{font-size:13px;color:var(--ink-dim)}
+footer .mark{text-align:center;font-family:'Noto Naskh Arabic',serif;font-size:32px;color:var(--accent)}
+footer .right{text-align:right;font-size:13px;color:var(--ink-dim)}
+@media (max-width:640px){footer .wrap{grid-template-columns:1fr;text-align:center}footer .right{text-align:center}}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org/",
+  "@type":"ProfilePage",
+  "name":"AimanibnAshraf",
+  "url":"https://aimanibnashraf.netlify.app/",
+  "description":"AimanibnAshraf — Slave Of Allah. Islamic reminders across YouTube, TikTok, Instagram and Facebook.",
+  "image":"https://aimanibnashraf.netlify.app/insta_profile_pic.jpg",
+  "mainEntity":{
+    "@type":"Person",
+    "name":"AimanibnAshraf",
+    "alternateName":"@aimanibnashraf",
+    "description":"Slave Of Allah.",
+    "image":"https://aimanibnashraf.netlify.app/insta_profile_pic.jpg",
+    "url":"https://aimanibnashraf.netlify.app/",
+    "sameAs":[
+      "https://www.youtube.com/@AimanibnAshraf",
+      "https://www.tiktok.com/@aimanibnashraf",
+      "https://www.instagram.com/aimanibnashraf",
+      "https://www.facebook.com/share/1BsXmft9zL"
+    ]
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="brand"><span class="ar">﷽</span>AimanibnAshraf</div>
+    <div class="meta">Est. Oct 2020 · Slave Of Allah</div>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#reach">Reach</a>
+      <a href="#follow">Follow</a>
+      <a href="#subscribe">Subscribe</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="issue">
+        <span>No. 001</span>
+        <span>Volume I</span>
+        <span>Dhikr · Reminders · Reads</span>
+      </div>
+      <div class="bismillah ar">بِسْمِ اللَّهِ</div>
+      <h1>A <em>slave</em><br>of <em>Allah.</em></h1>
+      <p class="lede">Short Islamic reminders — one slow idea at a time. Posted across YouTube, TikTok, Instagram and Facebook since 2020. If one helps, it was worth posting.</p>
+      <div class="ctas">
+        <a class="btn primary" href="https://www.youtube.com/@AimanibnAshraf" target="_blank" rel="noopener">
+          Watch on YouTube
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg>
+        </a>
+        <a class="btn" href="#follow">All platforms</a>
+      </div>
+    </div>
+    <aside class="portrait" aria-hidden="false">
+      <div class="frame"><img src="insta_profile_pic.jpg" alt="Portrait of AimanibnAshraf"></div>
+      <div class="caption"><span>Portrait</span><span>@aimanibnashraf</span></div>
+    </aside>
+  </div>
+</section>
+
+<section class="strip" aria-label="Reach across platforms">
+  <div class="marquee" aria-hidden="true">
+    <span>5,852 <em>followers on TikTok</em></span><span class="dot">●</span>
+    <span>2.23K <em>subscribers on YouTube</em></span><span class="dot">●</span>
+    <span>492.9K <em>likes on TikTok</em></span><span class="dot">●</span>
+    <span>223 <em>videos published</em></span><span class="dot">●</span>
+    <span>457K <em>YouTube views</em></span><span class="dot">●</span>
+    <span class="ar" style="font-size:22px">الحمد لله</span><span class="dot">●</span>
+    <!-- duplicate for seamless loop -->
+    <span>5,852 <em>followers on TikTok</em></span><span class="dot">●</span>
+    <span>2.23K <em>subscribers on YouTube</em></span><span class="dot">●</span>
+    <span>492.9K <em>likes on TikTok</em></span><span class="dot">●</span>
+    <span>223 <em>videos published</em></span><span class="dot">●</span>
+    <span>457K <em>YouTube views</em></span><span class="dot">●</span>
+    <span class="ar" style="font-size:22px">الحمد لله</span><span class="dot">●</span>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="head">
+      <div class="num">§ 01 — Introduction</div>
+      <h2>Three words. <em>Slave Of Allah.</em></h2>
+    </div>
+    <div class="about">
+      <div class="lead">
+        That's the whole bio — and the whole <em>job description.</em>
+      </div>
+      <div class="body">
+        <p>No niche branding, no personal mission statement longer than the message itself. The feed is what it says it is: short Islamic reminders, posted when they're ready, across the platforms where people happen to be.</p>
+        <p>Started October 2020. Four years in, the posts are still short, still reminders — alhamdulillah.</p>
+        <div class="verse">
+          <span class="ar">وَذَكِّرْ فَإِنَّ الذِّكْرَىٰ تَنفَعُ الْمُؤْمِنِينَ</span>
+          <div class="en">"And remind, for truly the reminder benefits the believers."</div>
+          <cite>— Qur'an 51:55</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reach">
+  <div class="wrap">
+    <div class="head">
+      <div class="num">§ 02 — By the numbers</div>
+      <h2>Reach, in <em>plain figures.</em></h2>
+    </div>
+    <div class="reach">
+      <div class="stat">
+        <div class="plat">YouTube</div>
+        <div class="n">2.23K</div>
+        <div class="label">Subscribers</div>
+      </div>
+      <div class="stat">
+        <div class="plat">YouTube</div>
+        <div class="n">457K</div>
+        <div class="label">Lifetime views across 223 videos</div>
+      </div>
+      <div class="stat">
+        <div class="plat">TikTok</div>
+        <div class="n">5,852</div>
+        <div class="label">Followers</div>
+      </div>
+      <div class="stat">
+        <div class="plat">TikTok</div>
+        <div class="n">492.9K</div>
+        <div class="label">Likes received</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="follow">
+  <div class="wrap">
+    <div class="head">
+      <div class="num">§ 03 — Platforms</div>
+      <h2>Follow wherever <em>you already scroll.</em></h2>
+    </div>
+    <div class="platforms">
+
+      <a class="plat-card featured" href="https://www.youtube.com/@AimanibnAshraf" target="_blank" rel="noopener" aria-label="YouTube — AimanibnAshraf">
+        <div class="top">
+          <svg class="logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.5a3 3 0 0 0-2.1-2.1C19 5 12 5 12 5s-7 0-8.9.4A3 3 0 0 0 1 7.5 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.5a3 3 0 0 0 2.1 2.1C5 19 12 19 12 19s7 0 8.9-.4a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23.5 12 31 31 0 0 0 23 7.5zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+          <div class="num-mark ar">١</div>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+        <div>
+          <div class="meta"><span><b>2.23K</b> subs</span><span><b>223</b> videos</span><span><b>457K</b> views</span></div>
+          <div class="name">YouTube</div>
+          <div class="handle">@AimanibnAshraf · reminders &amp; shorts</div>
+        </div>
+      </a>
+
+      <a class="plat-card" href="https://www.tiktok.com/@aimanibnashraf" target="_blank" rel="noopener" aria-label="TikTok — aimanibnashraf">
+        <div class="top">
+          <svg class="logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 3v3a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.8V16a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3V3h3z"/></svg>
+          <div class="num-mark ar">٢</div>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+        <div>
+          <div class="meta"><span><b>5,852</b> followers</span><span><b>492.9K</b> likes</span></div>
+          <div class="name">TikTok</div>
+          <div class="handle">@aimanibnashraf</div>
+        </div>
+      </a>
+
+      <a class="plat-card" href="https://www.instagram.com/aimanibnashraf" target="_blank" rel="noopener" aria-label="Instagram — aimanibnashraf">
+        <div class="top">
+          <svg class="logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          <div class="num-mark ar">٣</div>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+        <div>
+          <div class="meta"><span>visual reminders</span></div>
+          <div class="name">Instagram</div>
+          <div class="handle">@aimanibnashraf</div>
+        </div>
+      </a>
+
+      <a class="plat-card" href="https://www.facebook.com/share/1BsXmft9zL" target="_blank" rel="noopener" aria-label="Facebook — AimanibnAshraf">
+        <div class="top">
+          <svg class="logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 22v-8h3l1-4h-4V7.5c0-1.2.4-2 2.1-2H17V2.2A28 28 0 0 0 14.3 2C11.7 2 10 3.6 10 6.9V10H7v4h3v8h3z"/></svg>
+          <div class="num-mark ar">٤</div>
+        </div>
+        <span class="arrow" aria-hidden="true">↗</span>
+        <div>
+          <div class="meta"><span>cross-posts</span></div>
+          <div class="name">Facebook</div>
+          <div class="handle">AimanibnAshraf</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="subscribe">
+  <div class="wrap">
+    <div class="head">
+      <div class="num">§ 04 — By email</div>
+      <h2>A quieter channel.</h2>
+    </div>
+    <div class="subscribe">
+      <div class="copy">
+        <h3>One reminder, in your inbox, <em>once a while.</em></h3>
+        <p>No algorithm, no feed. A short written reflection sent only when it's ready. Unsubscribe any time, in sha Allah.</p>
+        <div class="proof">Joined by readers from <b>5 countries</b> and counting.</div>
+      </div>
+      <form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field" aria-label="Email subscribe">
+        <input type="hidden" name="form-name" value="subscribe">
+        <p hidden><label>Don't fill this: <input name="bot-field"></label></p>
+        <div class="row">
+          <label for="em" style="position:absolute;left:-9999px">Email</label>
+          <input id="em" type="email" name="email" placeholder="your@email" required autocomplete="email">
+          <button type="submit">Subscribe</button>
+        </div>
+        <small>Rare, short, in Allah's name. No spam.</small>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="left">© <span id="y"></span> AimanibnAshraf · All rights reserved.</div>
+    <div class="mark ar">۞</div>
+    <div class="right">Built slowly, بِاسْمِ اللّٰهِ.</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){
+  document.querySelector('.marquee')?.style.setProperty('animation','none');
+}
+</script>
+</body>
+</html>

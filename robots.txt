@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aimanibnashraf.netlify.app/sitemap.xml
